@@ -74,7 +74,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Build with Next.js
-        run: next build
+        run: yarn next build
         env: 
           DEFAULT_LOCATION: ${{ secrets.DEFAULT_LOCATION }}
       - name: Static HTML export with Next.js
