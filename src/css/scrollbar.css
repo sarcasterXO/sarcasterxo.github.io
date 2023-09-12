@@ -1,0 +1,25 @@
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+	width: 12px; /* Adjust the width as needed */
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+	background-color: #2b363e; /* Dark color for the thumb */
+	border-radius: 10px; /* Rounded corners */
+}
+
+/* Customize the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+	background-color: #ffa34d; /* Darker color on hover */
+}
+
+/* Customize the scrollbar track when it is empty */
+::-webkit-scrollbar-track {
+	background-color: #131e25; /* Dark color for the track */
+	/* border-radius: 8px; Rounded corners */
+}
+
+Customize the scrollbar corner ::-webkit-scrollbar-corner {
+	background-color: transparent;
+}

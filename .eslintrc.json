@@ -1,0 +1,23 @@
+{
+	"root": true,
+	"extends": ["mahir/common", "mahir/node", "mahir/typescript", "mahir/prettier"],
+	"ignorePatterns": [".next", "next-env.d.ts", "next-env-d.d.ts", "next.config.js"],
+	"parserOptions": {
+		"project": ["./tsconfig.eslint.json", "./apps/*/tsconfig.eslint.json", "./packages/*/tsconfig.eslint.json"]
+	},
+	"rules": {
+		"no-console": [
+			"error",
+			{
+				"allow": ["error", "info", "warn"]
+			}
+		],
+		"no-warning-comments": "off",
+		"import/extensions": "off"
+	},
+	"settings": {
+		"next": {
+			"rootDir": ["apps/*/"]
+		}
+	}
+}
