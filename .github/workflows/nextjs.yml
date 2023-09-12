@@ -73,7 +73,7 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: |
-        ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        yarn install
         env:
         DEFAULT_LOCATION: ${{ secrets.DEFAULT_LOCATION }}
       - name: Build with Next.js
