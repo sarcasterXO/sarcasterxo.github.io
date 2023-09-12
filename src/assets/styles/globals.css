@@ -4,19 +4,19 @@
 
 @font-face {
 	font-family: 'Fira Code';
-	src: url('../fonts/firacode.ttf') format('truetype');
+	src: url('../../fonts/firacode.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'Parisienne';
-	src: url('../fonts/parisienne.ttf') format('truetype');
+	src: url('../../fonts/parisienne.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'BalsamiqSans';
-	src: url('../fonts/balsamiqsans.ttf') format('truetype');
+	src: url('../../fonts/balsamiqsans.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'PressStart2P';
-	src: url('../fonts/pressstart2p.ttf') format('truetype');
+	src: url('../../fonts/pressstart2p.ttf') format('truetype');
 }
 
 body {

@@ -1,5 +1,5 @@
-import '../css/globals.css';
-import '../css/scrollbar.css';
+import '../assets/styles/globals.css';
+import '../assets/styles/scrollbar.css';
 
 import type { AppProps } from 'next/app';
 import { Nanum_Myeongjo } from 'next/font/google';
@@ -7,6 +7,7 @@ import font from 'next/font/local';
 import Head from 'next/head';
 import { Toaster } from 'react-hot-toast';
 import Footer from './footer';
+import { getMetaData } from '../utils/constants';
 
 const title = Nanum_Myeongjo({
 	subsets: ['latin'],
@@ -19,6 +20,7 @@ const body = font({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
+	const { title: embedTitle, description, image, color, url } = getMetaData();
 	return (
 		<>
 			<style jsx global>
@@ -32,8 +34,13 @@ export default function App({ Component, pageProps }: AppProps) {
 
 			<Head>
 				<title>Sarcaster</title>
-				<meta content="width=device-width, initial-scale=1" name="viewport" />
 				<link rel="icon" href="/favicon.ico" />
+				<meta content="width=device-width, initial-scale=1" name="viewport" />
+				<meta property="og:title" content={embedTitle} />
+				<meta property="og:description" content={description} />
+				<meta property="og:url" content={url} />
+				<meta property="og:image" content={image} />
+				<meta property="og:color" content={color} />
 			</Head>
 			<Component {...pageProps} />
 			<Footer />

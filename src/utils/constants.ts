@@ -1,4 +1,5 @@
 import { StaticImageData } from 'next/image';
+import defaultImage from '../assets/images/default.png';
 
 export const INTimeFormatter = (showMillis = false) => {
 	const time = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }).split(', ')[1] as string;
@@ -33,3 +34,13 @@ export interface ActivityProps {
 	link: string;
 	icon: string;
 }
+
+export const getMetaData = () => {
+	return {
+		title: 'Sarcaster',
+		description: 'Portfolio of Sarcaster',
+		image: defaultImage.src,
+		color: '#2b363e',
+		url: 'https://sarcaster.is-a.dev',
+	};
+};

@@ -1,7 +1,7 @@
 import type { Data, LanyardResponse, Snowflake } from 'use-lanyard';
-import coding from '../images/coding.jpg';
-import editing from '../images/editing.jpg';
-import porsche from '../images/porsche.jpg';
+import coding from '../assets/images/coding.jpg';
+import editing from '../assets/images/editing.jpg';
+import porsche from '../assets/images/porsche.jpg';
 import { ActivityProps } from '../utils/constants';
 
 export async function getLanyard(id: Snowflake) {
@@ -32,6 +32,8 @@ export function extractPresenceData(lanyardData: Data | null): ActivityProps {
 	} as ActivityProps;
 
 	if (!lanyardData) return data;
+
+	console.log(lanyardData.activities);
 
 	const spotify = lanyardData.spotify;
 	if (spotify) {
@@ -84,7 +86,7 @@ export function extractPresenceData(lanyardData: Data | null): ActivityProps {
 		} as ActivityProps;
 	}
 	const other = lanyardData.activities[0];
-	if (!spotify && !vsc && !adobe && other) {
+	if (!spotify && !vsc && !adobe && other && other.assets) {
 		data = {
 			id: 'other',
 			name: `Using ${other.name}`,

@@ -1,6 +1,6 @@
-import sofi from '../images/sofi.png';
-import adobe from '../images/adobe.png';
-import cohzie from '../images/cohzie.jpg';
+import sofi from '../assets/images/sofi.png';
+import adobe from '../assets/images/adobe.png';
+import cohzie from '../assets/images/cohzie.jpg';
 
 export function getCurrentProjects() {
 	return [
