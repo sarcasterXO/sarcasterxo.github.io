@@ -33,8 +33,6 @@ export function extractPresenceData(lanyardData: Data | null): ActivityProps {
 
 	if (!lanyardData) return data;
 
-	console.log(lanyardData.activities);
-
 	const spotify = lanyardData.spotify;
 	if (spotify) {
 		icon = 'spotify';
