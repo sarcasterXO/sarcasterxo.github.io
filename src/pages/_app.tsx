@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
 			<Head>
 				<title>Sarcaster</title>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
 				<meta property="og:title" content={embedTitle} />
 				<meta property="og:url" content={url} />
