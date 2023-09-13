@@ -30,3 +30,21 @@ body {
 		rgb(19, 30, 37) 66%
 	);
 }
+
+@media screen and (max-width: 800px) {
+	.left,
+	.main,
+	.right {
+		width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
+	}
+	h1,
+	h2 {
+		font-size: 14px;
+	}
+	p {
+		font-size: 10px;
+	}
+	span {
+		font-size: 12px;
+	}
+}

@@ -179,7 +179,7 @@ export default function Home(props: Props) {
 						}[status],
 					)}
 				>
-					<div className="-rotate-[4deg] scale-[1] space-y-1 text-center md:scale-[1.2]">
+					<div className="-rotate-[4deg] scale-[1] space-y-1 text-center text-2xl md:scale-[1.2]">
 						<h2>
 							<SiDiscord className="inline" /> <span style={{ fontFamily: 'BalsamiqSans' }}>{status}</span>
 						</h2>
