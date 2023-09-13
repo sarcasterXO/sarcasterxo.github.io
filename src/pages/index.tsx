@@ -157,9 +157,9 @@ export default function Home(props: Props) {
 					)}
 				>
 					<span className="sr-only">Instagram</span>
-					<span className="transform-gpu transition duration-500 group-hover:scale-[1.3]">
+					<header className="transform-gpu transition duration-500 group-hover:scale-[1.3]">
 						<SiInstagram />
-					</span>
+					</header>
 				</Link>
 			</CardHoverEffect>
 
@@ -180,9 +180,9 @@ export default function Home(props: Props) {
 					)}
 				>
 					<div className="-rotate-[4deg] scale-[1] space-y-1 text-center text-2xl md:scale-[1.2]">
-						<h2>
+						<header>
 							<SiDiscord className="inline" /> <span style={{ fontFamily: 'BalsamiqSans' }}>{status}</span>
-						</h2>
+						</header>
 
 						<p className="text-base" style={{ fontFamily: 'BalsamiqSans' }}>
 							<span>@{lanyard ? lanyard.discord_user.username : 'sarcasterxo'}</span>
@@ -353,8 +353,7 @@ export default function Home(props: Props) {
 
 			<div className="col-span-6 space-y-2 rounded-2xl bg-yellow-200 p-6 text-white dark:bg-indigo-800 md:col-span-4">
 				<h2 className="text-xl font-bold" style={{ fontFamily: 'Parisienne', fontSize: '28px' }}>
-					Hello world <span className="inline dark:hidden">🌻</span>
-					<span className="hidden dark:inline">🤡</span>
+					Hello world 🤡
 				</h2>
 
 				<p>
@@ -388,7 +387,7 @@ export default function Home(props: Props) {
 							>
 								<img src={project.image} alt={project.name.toLowerCase()} className="mr-4 h-12 w-12 rounded-full" />
 								<div>
-									<h2 className="text-xl font-bold tracking-wide">{project.name}</h2>
+									<h3 className="text-lg font-bold tracking-wide">{project.name}</h3>
 									<p className="line-clamp-2">{project.description}</p>
 								</div>
 							</Link>
@@ -409,9 +408,9 @@ export default function Home(props: Props) {
 					)}
 				>
 					<div className="-rotate-[4deg] scale-[1] space-y-1 text-center text-white opacity-90 md:scale-[1.2]">
-						<h2>
+						<header>
 							<SiPaypal className="inline" />
-						</h2>
+						</header>
 
 						<p className="text-lg font-semibold" style={{ fontFamily: 'PressStart2P' }}>
 							<span>Sponsor Me :)</span>
@@ -437,9 +436,9 @@ export default function Home(props: Props) {
 					</span>
 
 					<span className="space-y-0.5 px-6 pb-6">
-						<span className="font-heading text-2xl font-semibold tracking-wide">Contact Me!</span>
+						<header className="font-heading text-xl font-semibold tracking-wide">Contact Me!</header>
 
-						<span className="text-m block font-semibold">sarcasteryt@gmail.com</span>
+						<span className="block font-semibold">sarcasteryt@gmail.com</span>
 					</span>
 				</Link>
 			</CardHoverEffect>
