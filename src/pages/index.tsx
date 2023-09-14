@@ -435,11 +435,11 @@ export default function Home(props: Props) {
 						</span>
 					</span>
 
-					<span className="space-y-0.5 px-6 pb-6">
-						<header className="font-heading text-xl font-semibold tracking-wide">Contact Me!</header>
+					<div className="space-y-0.5 px-6 pb-6">
+						<header className="block font-heading text-xl font-semibold tracking-wide">Contact Me!</header>
 
-						<span className="block font-semibold">sarcasteryt@gmail.com</span>
-					</span>
+						<p className="font-semibold">sarcasteryt@gmail.com</p>
+					</div>
 				</Link>
 			</CardHoverEffect>
 		</main>

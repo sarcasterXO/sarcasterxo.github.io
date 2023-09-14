@@ -1,8 +1,8 @@
 import { StaticImageData } from 'next/image';
 import defaultImage from '../assets/images/default.png';
 
-export const INTimeFormatter = (showMillis = false) => {
-	const time = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }).split(', ')[1] as string;
+export const INTimeFormatter = (time: Date | string, showMillis = false) => {
+	time = time.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }).split(', ')[1] as string;
 	const hours = time.split(':')[0];
 	const minutes = time.split(':')[1];
 	const millis = time.split(':')[2];

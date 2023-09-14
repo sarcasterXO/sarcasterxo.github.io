@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { daysUntilBirthday, INTimeFormatter } from '../utils/constants';
 
-function Night() {
+function Night({ time }: { time: Date }) {
 	const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
 	useEffect(() => {
@@ -38,7 +38,9 @@ function Night() {
 			/>
 
 			<div className="z-10 text-center">
-				<h2 className={clsx('text-center text-xl font-bold', 'dark:text-glow-gray-500')}>{INTimeFormatter(false)}</h2>
+				<h2 className={clsx('text-center text-xl font-bold', 'dark:text-glow-gray-500')}>
+					{INTimeFormatter(time, false)}
+				</h2>
 
 				<p className={clsx('text-s font-light', 'text-glow-sky-900 dark:text-glow-sky-500')}>in India</p>
 			</div>
@@ -46,14 +48,14 @@ function Night() {
 	);
 }
 
-function Day() {
+function Day({ time }: { time: Date }) {
 	return (
 		<div className="opacity-85 relative flex overflow-hidden rounded-2xl bg-gradient-to-br from-[#0A8DFF] to-[#98CFFF] first-letter:w-full">
 			<div className="flex w-full items-center justify-center">
 				<div className="flex items-baseline space-x-1 md:space-x-2">
 					<div className="flex flex-col">
 						<div className={clsx('text-center text-xl font-bold', 'text-yellow-200 dark:text-yellow-200')}>
-							{INTimeFormatter(false)}
+							{INTimeFormatter(time, false)}
 						</div>
 						<p className={clsx('text-s text-center font-medium', 'text-black dark:text-black dark:text-glow-sky-500')}>
 							in India
@@ -125,7 +127,7 @@ export function Time() {
 
 	return (
 		<div className="col-span-3 grid grid-cols-1 gap-6 md:col-span-1">
-			{isNight ? <Night /> : <Day />}
+			{isNight ? <Night time={time} /> : <Day time={time} />}
 
 			<div
 				className={`flex items-center justify-center rounded-2xl bg-indigo-100 text-fuchsia-200 dark:bg-[#23224c] dark:text-fuchsia-300 ${
