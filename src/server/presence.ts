@@ -85,12 +85,15 @@ export function extractPresenceData(lanyardData: Data | null): ActivityProps {
 	}
 	const other = lanyardData.activities[0];
 	if (!spotify && !vsc && !adobe && other && other.assets) {
+		const image = other.assets.large_image
 		data = {
 			id: 'other',
 			name: `Using ${other.name}`,
 			state: other.state || null,
 			details: other.details || null,
-			image: other.assets?.large_image ?? '',
+			image: image
+				? (image.match(/https\/.*/gm) || [''])[0]?.replace('https/', 'https://')
+				: '',
 			link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs',
 		} as ActivityProps;
 	}
