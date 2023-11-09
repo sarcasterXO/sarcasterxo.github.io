@@ -14,16 +14,24 @@ export const RelativeTimeFormatter = new Intl.RelativeTimeFormat('en', {
 });
 
 export const discordId = '592707660604899328';
-export const dob = new Date('2001-11-27');
+export const dob = new Date('2001-11-27'); // Replace with your actual date of birth
 export const age = new Date(Date.now() - dob.getTime()).getUTCFullYear() - 1970;
 export const hasHadBirthdayThisYear = new Date().getMonth() >= dob.getMonth() && new Date().getDate() >= dob.getDate();
-export const nextBirthdayYear = new Date().getFullYear() + (hasHadBirthdayThisYear ? 1 : 0);
-export const daysUntilBirthday = RelativeTimeFormatter.formatToParts(
-	Math.floor(
-		(new Date(nextBirthdayYear, dob.getMonth(), dob.getDay() + 1).getTime() - Date.now()) / 1000 / 60 / 60 / 24,
-	),
-	'day',
-)[1]!.value.toString();
+export const today = new Date();
+export const nextBirthdayYear =
+	today.getFullYear() +
+	(today.getMonth() > dob.getMonth() || (today.getMonth() === dob.getMonth() && today.getDate() >= dob.getDate())
+		? 1
+		: 0);
+export const daysUntilBirthday = Math.floor(
+	(new Date(nextBirthdayYear, dob.getMonth(), dob.getDate()).getTime() - today.getTime()) / 1000 / 60 / 60 / 24,
+);
+// export const daysUntilBirthday = RelativeTimeFormatter.formatToParts(
+// 	Math.floor(
+// 		(new Date(nextBirthdayYear, dob.getMonth(), dob.getDay() + 1).getTime() - Date.now()) / 1000 / 60 / 60 / 24,
+// 	),
+// 	'day',
+// )[1]!.value.toString();
 
 export interface ActivityProps {
 	id: string;

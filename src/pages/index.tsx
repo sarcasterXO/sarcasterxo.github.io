@@ -85,8 +85,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 };
 
 export default function Home(props: Props) {
-	// const age = new Date().getFullYear() - 2001;
-
 	const { data: lanyard, presence } = useUpdatingLanyard(discordId, props.lanyard.data);
 	const icon = presence?.icon;
 
