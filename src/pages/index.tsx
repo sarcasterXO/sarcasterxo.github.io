@@ -8,6 +8,7 @@ import {
 	SiAdobelightroomclassic,
 	SiAdobephotoshop,
 	SiAdobepremierepro,
+	SiBmw,
 	SiDiscord,
 	SiGit,
 	SiGithub,
@@ -23,7 +24,6 @@ import {
 	SiNodedotjs,
 	SiNpm,
 	SiPaypal,
-	SiPorsche,
 	SiPython,
 	SiReact,
 	SiSpotify,
@@ -104,7 +104,7 @@ export default function Home(props: Props) {
 	} else if (icon?.includes('illustrator')) {
 		presenceIcon = SiAdobeillustrator;
 	} else if (icon?.includes('bmw')) {
-		presenceIcon = SiPorsche;
+		presenceIcon = SiBmw;
 	}
 
 	const status = lanyard?.discord_status ?? 'offline';
