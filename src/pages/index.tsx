@@ -103,7 +103,7 @@ export default function Home(props: Props) {
 		presenceIcon = SiAdobelightroomclassic;
 	} else if (icon?.includes('illustrator')) {
 		presenceIcon = SiAdobeillustrator;
-	} else if (icon?.includes('porsche')) {
+	} else if (icon?.includes('bmw')) {
 		presenceIcon = SiPorsche;
 	}
 
@@ -146,7 +146,7 @@ export default function Home(props: Props) {
 
 			<CardHoverEffect className="col-span-2 h-full">
 				<Link
-					href="https://instagram.com/sarcaster.fx"
+					href="https://instagram.com/sarcasterxo"
 					target="_blank"
 					rel="noopener noreferrer"
 					className={clsx(

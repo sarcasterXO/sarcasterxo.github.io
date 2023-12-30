@@ -1,7 +1,7 @@
 import type { Data, LanyardResponse, Snowflake } from 'use-lanyard';
 import coding from '../assets/images/coding.jpg';
 import editing from '../assets/images/editing.jpg';
-import porsche from '../assets/images/porsche.jpg';
+import bmw from '../assets/images/bmw.jpg';
 import { ActivityProps } from '../utils/constants';
 
 export async function getLanyard(id: Snowflake) {
@@ -20,14 +20,14 @@ export async function getLanyard(id: Snowflake) {
 }
 
 export function extractPresenceData(lanyardData: Data | null): ActivityProps {
-	let icon = 'porsche';
+	let icon = 'bmw';
 	let data = {
 		id: 'driving',
 		name: `On a long drive`,
 		state: `With loud music`,
 		details: 'Roaring up at full throttle! ❤️‍🔥',
-		image: porsche,
-		link: 'https://www.youtube.com/watch?v=BHZtcZ0-Ss8&pp=ygUmcG9yc2NoZSBjYXJyZXJhIDkxMSBndCBjaW5lbWF0aWMgdmlkZW8%3D',
+		image: bmw,
+		link: 'https://www.youtube.com/watch?v=39gYhZGRQ8o&t=640s',
 		icon,
 	} as ActivityProps;
 
@@ -85,15 +85,13 @@ export function extractPresenceData(lanyardData: Data | null): ActivityProps {
 	}
 	const other = lanyardData.activities[0];
 	if (!spotify && !vsc && !adobe && other && other.assets) {
-		const image = other.assets.large_image
+		const image = other.assets.large_image;
 		data = {
 			id: 'other',
 			name: `Using ${other.name}`,
 			state: other.state || null,
 			details: other.details || null,
-			image: image
-				? (image.match(/https\/.*/gm) || [''])[0]?.replace('https/', 'https://')
-				: '',
+			image: image ? (image.match(/https\/.*/gm) || [''])[0]?.replace('https/', 'https://') : '',
 			link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs',
 		} as ActivityProps;
 	}
