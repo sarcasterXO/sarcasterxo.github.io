@@ -20,7 +20,7 @@ out
 !.yarn/cache
 !.yarn/patches
 !.yarn/plugins
-.yarn/releases
+!.yarn/releases
 !.yarn/sdks
 !.yarn/versions
 
@@ -29,6 +29,3 @@ out
 
 # Cloud9 IDE files
 .c9
-
-.yarnrc.yml
-yarn.lock
