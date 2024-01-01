@@ -16,7 +16,7 @@ export function getCurrentProjects() {
 			image: adobe.src,
 			name: 'Freelancer - Graphic Designer/Video Editor',
 			description: 'Designing eye-catching thumbnails and editing content for YouTubers and Social Media Influencers.',
-			link: 'https://drive.google.com/drive/folders/15fgoHWJ1gkNbFRWETm7JDdaJQ45QIe4a?usp=drive_link',
+			link: 'https://www.behance.net/sarcasterxo',
 		},
 		{
 			id: 3,

@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import { daysUntilBirthday, INTimeFormatter } from '../utils/constants';
+import { daysUntilNextBirthday, INTimeFormatter } from '../utils/constants';
 
 function Night({ time }: { time: Date }) {
 	const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -103,13 +103,21 @@ export function Time() {
 	const [time, setTime] = useState(() => new Date());
 	const [isHovered, setIsHovered] = useState(false);
 
+	const isBirthday = new Date().getDate() === 27 && new Date().getMonth() + 1 === 11;
+	console.log(new Date().getDate());
 	const birthdayText = isHovered ? (
 		<p className="font-semibold">
 			<span className="text-base tracking-wider">27/11/2001</span>
 		</p>
+	) : isBirthday ? (
+		<p className="font-heading text-sm">
+			It's my
+			<br />
+			<span className="font-sans text-base font-bold tracking-wide">BIRTHDAY!!</span>
+		</p>
 	) : (
 		<p className="font-heading text-xs">
-			<span className="font-sans text-xl font-bold tracking-wide">{daysUntilBirthday}</span> days
+			<span className="font-sans text-xl font-bold tracking-wide">{daysUntilNextBirthday}</span> days
 			<br />
 			until birthday
 		</p>

@@ -5,7 +5,7 @@
 	"author": "Sarcaster!",
 	"license": "Apache-2.0",
 	"private": true,
-	"packageManager": "yarn@3.6.3",
+	"packageManager": "yarn@4.0.2",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
@@ -46,6 +46,7 @@
 		"react-dom": "^18.2.0",
 		"react-hot-toast": "^2.4.1",
 		"react-icons": "^4.9.0",
+		"undici": "^6.2.1",
 		"use-lanyard": "^1.4.4",
 		"uuid": "^9.0.0",
 		"zod": "^3.21.4"
