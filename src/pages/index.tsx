@@ -115,7 +115,6 @@ export default function Home(props: Props) {
 				<div className="flex flex-col items-center space-y-4 px-6 py-8 md:flex-row md:space-x-4 md:space-y-0">
 					<img
 						src={me.src}
-						placeholder="blur"
 						height={96}
 						width={96}
 						className="h-24 w-24 rounded-full border border-pink-500 object-cover"
