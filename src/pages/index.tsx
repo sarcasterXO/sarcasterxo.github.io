@@ -18,6 +18,7 @@ import {
 	SiHetzner,
 	SiInstagram,
 	SiJavascript,
+	SiLinkedin,
 	SiMdx,
 	SiMongodb,
 	SiNextdotjs,
@@ -111,7 +112,7 @@ export default function Home(props: Props) {
 
 	return (
 		<main className="mx-auto grid max-w-3xl grid-cols-6 gap-6 px-6 pb-20 pt-16">
-			<div className="col-span-4 flex items-center justify-center overflow-hidden rounded-2xl bg-pink-200 dark:border-pink-500 dark:bg-pink-500/20 dark:shadow-none dark:backdrop-blur-2xl md:col-span-4 md:h-52">
+			<div className="col-span-4 flex items-center justify-center overflow-hidden rounded-2xl bg-pink-200 md:col-span-4 md:h-52 dark:border-pink-500 dark:bg-pink-500/20 dark:shadow-none dark:backdrop-blur-2xl">
 				<div className="flex flex-col items-center space-y-4 px-6 py-8 md:flex-row md:space-x-4 md:space-y-0">
 					<img
 						src={me.src}
@@ -123,7 +124,7 @@ export default function Home(props: Props) {
 
 					<div className="space-y-1">
 						<h1
-							className="text-center text-xl font-bold font-semibold text-green-900 dark:text-green-300 dark:text-glow-green-500/50 md:text-left"
+							className="text-center text-xl font-bold font-semibold text-green-900 md:text-left dark:text-green-300 dark:text-glow-green-500/50"
 							style={{ fontFamily: 'Fira Code, monospace', fontSize: '22px' }}
 						>
 							Aarya Chavan <span style={{ fontSize: '16px' }}>aka Sarcaster!</span>
@@ -134,7 +135,7 @@ export default function Home(props: Props) {
 						</h1>
 
 						<p
-							className="text-center font-semibold text-green-900 dark:text-green-300 dark:text-glow-green-500/50 md:text-left"
+							className="text-center font-semibold text-green-900 md:text-left dark:text-green-300 dark:text-glow-green-500/50"
 							style={{ fontSize: '15px' }}
 						>
 							a self taught Graphic Designer, Video Editor & Backend Developer 🤹🏻‍♂️
@@ -348,21 +349,22 @@ export default function Home(props: Props) {
 				</div>
 			</div>
 
-			<div className="col-span-6 space-y-2 rounded-2xl bg-yellow-200 p-6 text-white dark:bg-indigo-800 md:col-span-4">
+			<div className="col-span-6 space-y-2 rounded-2xl bg-yellow-200 p-6 text-white md:col-span-4 dark:bg-indigo-800">
 				<h2 className="text-xl font-bold" style={{ fontFamily: 'Parisienne', fontSize: '28px' }}>
 					Hello world 🤡
 				</h2>
-
 				<p>
-					I am a seasoned professional with nearly three years of comprehensive experience in Video Editing, Graphic
-					Designing, and Backend Development. Proficient in industry-standard tools such as Premiere Pro, Photoshop, and
-					JavaScript.
+					I am a self-taught professional with 2 years in Graphic Designing, specializing in eye-catching thumbnails and
+					banners using Adobe Photoshop and Lightroom.
 				</p>
-
 				<p>
-					I specialize in designing eye-catching thumbnails, videos, and developing user-friendly applications. I am
-					also a supporter of the open-source community, constantly seeking opportunities to enhance my skill set and
-					contribute to collaborative projects.
+					Video Editor with 4 years of experience, adept in Adobe Premiere Pro. Specializing in crafting entertaining
+					videos that captivate and engage audiences.
+				</p>
+				<p>
+					Backend Developer with 2 years of experience, proficient in JavaScript, focused on developing user-friendly,
+					scalable, and responsive applications. Active supporter of the open-source community, constantly seeking ways
+					to enhance skills and contribute to collaborative improvement.
 				</p>
 			</div>
 
@@ -393,25 +395,21 @@ export default function Home(props: Props) {
 				</div>
 			</div>
 
-			<CardHoverEffect className="col-span-3 h-52">
+			<CardHoverEffect className="col-span-3 items-center">
 				<Link
-					href="https://paypal.me/sarcasterop"
+					href="https://www.linkedin.com/in/sarcasterxo/"
 					target="_blank"
 					rel="noopener noreferrer"
 					className={clsx(
 						'col-span-3 flex h-52 items-center justify-center rounded-2xl text-4xl md:col-span-2',
 						hoverClassName,
-						'bg-sky-600',
+						'bg-sky-700',
 					)}
 				>
 					<div className="-rotate-[4deg] scale-[1] space-y-1 text-center text-white opacity-90 md:scale-[1.2]">
 						<header>
-							<SiPaypal className="inline" />
+							<SiLinkedin className="inline" />
 						</header>
-
-						<p className="text-lg font-semibold" style={{ fontFamily: 'PressStart2P' }}>
-							<span>Sponsor Me :)</span>
-						</p>
 					</div>
 				</Link>
 			</CardHoverEffect>
