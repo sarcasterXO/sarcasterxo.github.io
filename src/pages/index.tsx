@@ -24,7 +24,6 @@ import {
 	SiNextdotjs,
 	SiNodedotjs,
 	SiNpm,
-	SiPaypal,
 	SiPython,
 	SiReact,
 	SiSpotify,
