@@ -348,7 +348,7 @@ export default function Home(props: Props) {
 				</div>
 			</div>
 
-			<div className="col-span-6 space-y-2 rounded-2xl bg-yellow-200 p-6 text-white md:col-span-4 dark:bg-indigo-800">
+			<div className="col-span-6 space-y-2 rounded-2xl bg-indigo-800 p-6 text-white md:col-span-4">
 				<h2 className="text-xl font-bold" style={{ fontFamily: 'Parisienne', fontSize: '28px' }}>
 					Hello world 🤡
 				</h2>
