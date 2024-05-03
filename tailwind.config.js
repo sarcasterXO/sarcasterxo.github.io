@@ -15,6 +15,8 @@ module.exports = {
 		extend: {
 			colors: {
 				blurple: '#5865F2',
+				behanceBlue: '#053EFF',
+				paypalBlue: '#00457C',
 			},
 			backgroundImage: {
 				'gmail-gradient': 'linear-gradient(to left, #dd4b39, #d14836, #c94634, #c04432, #b94230)',

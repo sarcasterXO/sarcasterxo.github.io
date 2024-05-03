@@ -9,6 +9,7 @@ import {
 	SiAdobephotoshop,
 	SiAdobepremierepro,
 	SiBmw,
+	SiBehance,
 	SiDiscord,
 	SiGit,
 	SiGithub,
@@ -33,6 +34,7 @@ import {
 	SiVisualstudiocode,
 	SiWindows,
 	SiYarn,
+	SiPaypal,
 } from 'react-icons/si';
 import { Data } from 'use-lanyard';
 import { ActivityProps } from '../utils/constants';
@@ -137,7 +139,7 @@ export default function Home(props: Props) {
 							className="text-center font-semibold text-green-900 md:text-left dark:text-green-300 dark:text-glow-green-500/50"
 							style={{ fontSize: '15px' }}
 						>
-							a self taught Graphic Designer, Video Editor & Backend Developer 🤹🏻‍♂️
+							a self taught Full Stack Developer, Graphic Designer & Video Editor 🤹🏻‍♂️
 						</p>
 					</div>
 				</div>
@@ -353,17 +355,17 @@ export default function Home(props: Props) {
 					Hello world 🤡
 				</h2>
 				<p>
-					I am a self-taught professional with 2 years in Graphic Designing, specializing in eye-catching thumbnails and
-					banners using Adobe Photoshop and Lightroom.
+					I am a Full Stack Developer with 2 years of experience. I love building user-friendly, scalable and cool stuff
+					using JavaScript and the MERN Stack.
 				</p>
 				<p>
-					Video Editor with 4 years of experience, adept in Adobe Premiere Pro. Specializing in crafting entertaining
-					videos that captivate and engage audiences.
+					Besides coding, Besides coding, I'm also into Graphic Designing. With 2 years of experience using Adobe
+					Photoshop, I enjoy making visuals that pop. When it comes to videos, I've got you covered too. I've spent 3
+					years mastering Adobe Premiere Pro, crafting videos that tell stories and capture moments.
 				</p>
 				<p>
-					Backend Developer with 2 years of experience, proficient in JavaScript, focused on developing user-friendly,
-					scalable, and responsive applications. Active supporter of the open-source community, constantly seeking ways
-					to enhance skills and contribute to collaborative improvement.
+					When I'm not working, you can find me geeking out over cars and tech stuff. I usually go for drives or watch
+					anime/movies or maybe learn something new in my free time.
 				</p>
 			</div>
 
@@ -413,6 +415,48 @@ export default function Home(props: Props) {
 				</Link>
 			</CardHoverEffect>
 
+			<CardHoverEffect className="col-span-3 items-center">
+				<Link
+					href="https://www.behance.net/sarcasterxo"
+					target="_blank"
+					rel="noopener noreferrer"
+					className={clsx(
+						'col-span-3 flex h-52 items-center justify-center rounded-2xl text-4xl md:col-span-2',
+						hoverClassName,
+						'bg-behanceBlue',
+					)}
+				>
+					<div className="-rotate-[4deg] scale-[1] space-y-1 text-center text-white opacity-90 md:scale-[1.2]">
+						<header>
+							<SiBehance className="inline" />
+						</header>
+					</div>
+				</Link>
+			</CardHoverEffect>
+
+			<CardHoverEffect className="col-span-3 items-center">
+				<Link
+					href="https://paypal.me/sarcasterop"
+					target="_blank"
+					rel="noopener noreferrer"
+					className={clsx(
+						'col-span-3 flex h-52 items-center justify-center rounded-2xl text-4xl md:col-span-2',
+						hoverClassName,
+						'bg-paypalBlue',
+					)}
+				>
+					<div className="-rotate-[4deg] scale-[1] space-y-1 text-center text-white opacity-90 md:scale-[1.2]">
+						<header>
+							<SiPaypal className="inline" />
+						</header>
+
+						<p className="text-lg font-semibold" style={{ fontFamily: 'PressStart2P' }}>
+							<span>Sponsor Me :)</span>
+						</p>
+					</div>
+				</Link>
+			</CardHoverEffect>
+
 			<CardHoverEffect className="col-span-3 h-52">
 				<Link
 					href="mailto:sarcasteryt@gmail.com"
@@ -429,8 +473,10 @@ export default function Home(props: Props) {
 						</span>
 					</span>
 
-					<div className="space-y-0.5 px-6 pb-6">
-						<header className="block font-heading text-xl font-semibold tracking-wide">Contact Me!</header>
+					<div className="space-y-4 px-6 pb-6">
+						<header className="block font-heading text-xl font-semibold tracking-wide">
+							Let's team up and create something amazing together!!
+						</header>
 
 						<p className="font-semibold">sarcasteryt@gmail.com</p>
 					</div>
