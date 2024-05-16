@@ -359,12 +359,12 @@ export default function Home(props: Props) {
 					using JavaScript and the MERN Stack.
 				</p>
 				<p>
-					Besides coding, Besides coding, I'm also into Graphic Designing. With 2 years of experience using Adobe
-					Photoshop, I enjoy making visuals that pop. When it comes to videos, I've got you covered too. I've spent 3
-					years mastering Adobe Premiere Pro, crafting videos that tell stories and capture moments.
+					Besides coding, I'm also into Graphic Designing. With 2 years of experience using Adobe Photoshop, I enjoy
+					making visuals that pop. When it comes to videos, I've got you covered too. I've spent 3 years mastering Adobe
+					Premiere Pro, crafting videos that tell stories and capture moments.
 				</p>
 				<p>
-					When I'm not working, you can find me geeking out over cars and tech stuff. I usually go for drives or watch
+					When I'm not working, you can find me geeking out over cars and tech. I usually go for drives or watch
 					anime/movies or maybe learn something new in my free time.
 				</p>
 			</div>

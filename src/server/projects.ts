@@ -7,8 +7,8 @@ export function getCurrentProjects() {
 		{
 			id: 1,
 			image: sofi.src,
-			name: 'Sofi - Backend Developer',
-			description: 'A Discord game bot with more than 20M users.',
+			name: 'Sofi - Founding Engineer',
+			description: 'A Discord game bot with more than 23M users.',
 			link: 'https://sofi.gg',
 		},
 		{
