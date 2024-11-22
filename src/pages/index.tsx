@@ -17,7 +17,6 @@ import {
 	SiGooglecloud,
 	SiHeroku,
 	SiHetzner,
-	SiInstagram,
 	SiJavascript,
 	SiLinkedin,
 	SiMdx,
@@ -35,6 +34,7 @@ import {
 	SiWindows,
 	SiYarn,
 	SiPaypal,
+	SiX,
 } from 'react-icons/si';
 import { Data } from 'use-lanyard';
 import { ActivityProps } from '../utils/constants';
@@ -125,7 +125,7 @@ export default function Home(props: Props) {
 
 					<div className="space-y-1">
 						<h1
-							className="text-center text-xl font-bold font-semibold text-green-900 md:text-left dark:text-green-300 dark:text-glow-green-500/50"
+							className="text-center text-xl font-bold text-green-900 md:text-left dark:text-green-300 dark:text-glow-green-500/50"
 							style={{ fontFamily: 'Fira Code, monospace', fontSize: '22px' }}
 						>
 							Aarya Chavan <span style={{ fontSize: '16px' }}>aka Sarcaster!</span>
@@ -147,17 +147,17 @@ export default function Home(props: Props) {
 
 			<CardHoverEffect className="col-span-2 h-full">
 				<Link
-					href="https://instagram.com/sarcasterxo"
+					href="https://x.com/sarcasterXO"
 					target="_blank"
 					rel="noopener noreferrer"
 					className={clsx(
-						'flex h-full items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500 text-4xl text-white',
+						'flex h-full items-center justify-center rounded-2xl bg-gradient-to-br from-[#000000] to-[#2c2c2c] text-4xl text-white',
 						hoverClassName,
 					)}
 				>
-					<span className="sr-only">Instagram</span>
+					<span className="sr-only">X</span>
 					<header className="transform-gpu transition duration-500 group-hover:scale-[1.3]">
-						<SiInstagram />
+						<SiX />
 					</header>
 				</Link>
 			</CardHoverEffect>
@@ -379,7 +379,7 @@ export default function Home(props: Props) {
 					{props.currentProjects.map((project) => {
 						return (
 							<Link
-								className="-mx-6 block flex items-center px-6 py-2 hover:bg-yellow-700/50"
+								className="-mx-6 block items-center px-6 py-2 hover:bg-yellow-700/50"
 								key={project.name.toLowerCase()}
 								href={project.link}
 								target="_blank"
