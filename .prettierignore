@@ -1,8 +1,0 @@
-.next
-dist
-build
-out
-node_modules
-.yarn
-.git
-nextjs.yml
