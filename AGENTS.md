@@ -53,7 +53,7 @@ Buttons that render an `<a>` must set `nativeButton={false}`. Base UI otherwise 
 - `bun run lint:check` and `bun run format:check` report without writing.
 - `bun run build` then `bun run start` serves the production build.
 
-CI on GitHub-hosted `ubuntu-latest` runs `lint:check`, `format:check`, and `typecheck` for pushes to `main` and for pull requests. Pull requests also run commitlint. There is no deploy workflow.
+CI on GitHub-hosted `ubuntu-latest` runs `lint:check`, `format:check`, and `typecheck` for pushes to `main` and for pull requests. There is no deploy workflow.
 
 ## Conventions
 
