@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "next.js-template",
+      "name": "personal-website",
       "dependencies": {
         "@base-ui/react": "^1.9.0",
         "class-variance-authority": "^0.7.1",
